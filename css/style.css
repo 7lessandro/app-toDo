@@ -1,0 +1,39 @@
+html {
+    background: #121214;
+    font-size: 1.9rem;
+    color: #fff;
+}
+
+section {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+#app {
+    text-align: center;
+
+}
+
+input {
+    background:gray;
+    width: 260px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: lightgreen;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    margin-top: .9em;
+    width: 135px;
+    height: 45px;
+}
