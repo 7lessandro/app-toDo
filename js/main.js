@@ -18,7 +18,8 @@ function renderTodos() {
         var pos = todos.indexOf(todo)
         linkElement.setAttribute('onclick', 'deleteTodo('+ pos +')')
 
-        var linkText = document.createTextNode('Excluir')
+        var linkText = document.createElement('i')
+        linkText.setAttribute('class', 'fas fa-trash-alt')
 
         linkElement.appendChild(linkText)
 
@@ -34,8 +35,14 @@ renderTodos()
 function addTodo() {
     var todoText = inputElement.value
 
-    todos.push(todoText)
-    inputElement.value = ''
+    if(todoText == '') {
+        window.alert('Escreva uma tarefa antes de enviar :)')
+    } else {
+        todos.push(todoText)
+        inputElement.value = ''
+        inputElement.focus()
+    }
+
     renderTodos()
     saveToStorage()
 }

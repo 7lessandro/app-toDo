@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/font/Roboto-Black.ttf')
+}
+
+*  {
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
 html {
     background: #121214;
     font-size: 1.9rem;
@@ -8,12 +19,11 @@ section {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 #app {
     text-align: center;
-
 }
 
 input {
@@ -30,10 +40,18 @@ a {
 
 ul {
     list-style: none;
+
 }
 
 button {
-    margin-top: .9em;
-    width: 135px;
-    height: 45px;
+    padding: 19px;
+    background: #8257e6;
+    color: white;
+    border-radius: 50px;
+    border-style: none;
+    outline-style: none;
+}
+
+button:hover {
+    background: #9466ff;
 }
