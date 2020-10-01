@@ -10,7 +10,7 @@
 }
 
 html {
-    background: #121214;
+    background: rgb(18, 18, 20);
     font-size: 1.9rem;
     color: #fff;
 }
@@ -19,7 +19,7 @@ section {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #app {
@@ -45,13 +45,16 @@ ul {
 
 button {
     padding: 19px;
-    background: #8257e6;
+    background: #333;
     color: white;
     border-radius: 50px;
     border-style: none;
     outline-style: none;
+    margin-top: 1rem;
 }
 
 button:hover {
-    background: #9466ff;
+    background: #ddd;
+    color: #333;
+    transition: 1s ease;
 }
